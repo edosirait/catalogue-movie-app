@@ -1,4 +1,4 @@
-import { FC } from "react";
+import React, { FC } from "react";
 import MovieDetail from "../atoms/movie-detail";
 import MoviePoster from "../atoms/movie-poster";
 import MovieTitle from "../atoms/movie-title";
@@ -18,10 +18,10 @@ const FilmDetailPreview: FC<DetailPreviewModel> = ({
   startYear,
   director,
   casts,
-  genre
+  genre,
 }) => {
   return (
-     <div className="flex flex-col justify-center items-center w-100 p-2 gap-2">
+    <div className="flex flex-col justify-center items-center w-100 p-2 gap-2">
       <MoviePoster movieTitle={movieTitle} imgUrl={posterUrl} />
       <div className="flex flex-col bg-slate-900 p-4 rounded-2xl">
         <MovieTitle title={movieTitle} year={startYear} />
@@ -29,7 +29,6 @@ const FilmDetailPreview: FC<DetailPreviewModel> = ({
         <MovieDetail label={"Casts"} value={casts} />
         <MovieDetail label={"Genre"} value={genre} />
       </div>
-      
     </div>
   );
 };

@@ -1,6 +1,6 @@
+import React from "react";
 import { FC } from "react";
 import "../../index.css";
-
 
 export type MovieTitleModel = {
   title: string;

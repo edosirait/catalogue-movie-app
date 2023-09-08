@@ -1,4 +1,4 @@
-import { FC } from "react";
+import React, { FC } from "react";
 import { useDispatch } from "react-redux";
 import ListFilm from "../components/molecules/list-film";
 import { setPageTitle } from "../state-management/movie-action";
@@ -24,7 +24,7 @@ const SmartMovieList: FC<MovieListModel> = ({
   movieListData,
   onClickFilm,
   clickedId,
-  moviePlay
+  moviePlay,
 }) => {
   const dispatch = useDispatch();
   const onMovieSelected = (movieId: string) => {

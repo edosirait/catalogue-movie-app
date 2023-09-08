@@ -1,27 +1,24 @@
-import { FC } from "react";
+import React, { FC } from "react";
 
-export type ListTitleModel = {
+interface ListTitleModel {
   id: string;
   title: string;
   selected?: boolean;
-  onClick: Function;
-};
+  onClick: (id: string) => void;
+}
 
-const ListTitle: FC<ListTitleModel> = ({
-  id,
-  title,
-  selected,
-  onClick
-}) => {
+const ListTitle: FC<ListTitleModel> = ({ id, title, selected, onClick }) => {
   return (
-    <button className={
-        selected ? 
-        "text-left text-yellow-400 text-lg bg-slate-900 font-bold border-none cursor-pointer" : 
-        "text-left text-slate-900 font-bold text-lg font-normal"
-    }
+    <button
+      className={
+        selected
+          ? "text-left text-yellow-400 text-lg bg-slate-900 font-bold border-none cursor-pointer"
+          : "text-left text-slate-900 font-bold text-lg font-normal"
+      }
       onClick={() => {
         onClick(id);
-    }}>
+      }}
+    >
       {title}
     </button>
   );

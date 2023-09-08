@@ -1,4 +1,4 @@
-import { FC } from "react";
+import React, { FC } from "react";
 
 export type MoviePosterModel = {
   movieTitle: string;
@@ -6,7 +6,13 @@ export type MoviePosterModel = {
 };
 
 const MoviePoster: FC<MoviePosterModel> = ({ movieTitle, imgUrl }) => {
-return <img className="w-auto h-auto max-w-md max-h-md rounded-2xl" src={imgUrl} alt={movieTitle} />;
+  return (
+    <img
+      className="w-auto h-auto max-w-md max-h-md rounded-2xl"
+      src={imgUrl}
+      alt={movieTitle}
+    />
+  );
 };
 
 export default MoviePoster;

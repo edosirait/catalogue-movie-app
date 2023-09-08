@@ -1,4 +1,4 @@
-import { FC } from "react";
+import React, { FC } from "react";
 import { useSelector } from "react-redux";
 import SimpleHeader from "../components/atoms/simple-header";
 import { RootState } from "../state-management/movie-store";
