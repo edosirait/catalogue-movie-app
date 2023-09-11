@@ -1,7 +1,7 @@
 import React, { FC } from "react";
 import { useDispatch } from "react-redux";
 import ListFilm from "../components/molecules/list-film";
-import { setPageTitle } from "../state-management/movie-action";
+import { setPageTitle } from "../store/movie-action";
 
 type MovieListDataModel = {
   title: string;
