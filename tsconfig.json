@@ -8,8 +8,9 @@
     "forceConsistentCasingInFileNames": true, // Optional, enforces consistent filename casing
     "resolveJsonModule": true,
     "esModuleInterop": true,
-    "lib": ["dom", "es2015"]
+    "lib": ["dom", "es2015"],
+    "types": ["node", "jest", "@testing-library/jest-dom"],
   },
   "include": ["src/**/*.ts", "src/**/*.tsx"],
-  "exclude": ["node_modules"]
+  "exclude": ["node_modules"],
 }

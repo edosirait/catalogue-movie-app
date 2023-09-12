@@ -4,7 +4,7 @@ import { listMovieRecord } from "../../core";
 import SmartMovieList from "../../smart-components/smart-movie-list";
 import FilmDetailPreview from "../molecules/film-detail-preview";
 
-type MovieDataModel = {
+export type MovieDataModel = {
   title: string;
   year: string;
   id: string;
