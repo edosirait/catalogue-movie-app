@@ -14,12 +14,7 @@ describe("ListTitle", () => {
 
   it("should have title", () => {
     render(
-      <ListTitle
-        id={id}
-        title={title}
-        selected={select}
-        onClick={clicked(id)}
-      />
+      <ListTitle id={id} title={title} selected={select} onClick={clicked} />
     );
     expect(screen.getByText(title));
   });

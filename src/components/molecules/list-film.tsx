@@ -5,7 +5,7 @@ import ListTitle, { ListTitleModel } from "../atoms/list-title";
 type ListFilmModel = {
   dataList: Omit<ListTitleModel, "onClick">[];
   selectedId: string;
-  onClickItem: Function;
+  onClickItem: (id: string) => void;
 };
 
 const ListFilm: FC<ListFilmModel> = ({ dataList, selectedId, onClickItem }) => {

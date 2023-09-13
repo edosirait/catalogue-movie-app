@@ -1,6 +1,6 @@
 import React, { FC } from "react";
 
-interface ListTitleModel {
+export interface ListTitleModel {
   id: string;
   title: string;
   selected?: boolean;
