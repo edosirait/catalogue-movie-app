@@ -1,4 +1,3 @@
-"use client";
 import React, { FC, useMemo, useState } from "react";
 import { listMovieRecord } from "../../core";
 

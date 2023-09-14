@@ -1,14 +1,13 @@
-"use client";
 import React, { FC } from "react";
 
 export interface ListTitleModel {
   id: string;
   title: string;
   selected?: boolean;
-  // onClick: (id: string) => void;
+  onClick: (id: string) => void;
 }
 
-const ListTitle: FC<ListTitleModel> = ({ id, title, selected }) => {
+const ListTitle: FC<ListTitleModel> = ({ id, title, selected, onClick }) => {
   return (
     <button
       className={
@@ -17,9 +16,7 @@ const ListTitle: FC<ListTitleModel> = ({ id, title, selected }) => {
           : "text-left text-slate-900 font-bold text-lg font-normal"
       }
       onClick={() => {
-        // alert("kocaks");
-        // onClick(id);
-        console.log("id", id);
+        onClick(id);
       }}
     >
       {title}
