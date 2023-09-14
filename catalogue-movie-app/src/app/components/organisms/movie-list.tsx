@@ -1,8 +1,8 @@
-import React, { FC, useMemo, useState } from "react";
-import { listMovieRecord } from "../../core";
-
+import React, {FC} from "react";
+import { useMemo, useState } from "react";
 import SmartMovieList from "../../smart-components/smart-movie-list";
 import FilmDetailPreview from "../molecules/film-detail-preview";
+import {listMovieRecord} from "@/app/core";
 
 export type MovieDataModel = {
   title: string;
